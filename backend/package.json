@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/loader.js",
   "scripts": {
+    "clean": "rm -rf dist",
     "dev": "nodemon --exec babel-node src/loader.js",
     "build": "babel src --out-dir dist",
     "production": "pm2 start dist/loader.js --name my-money-backend"
