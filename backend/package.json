@@ -7,7 +7,8 @@
     "clean": "rm -rf dist",
     "dev": "nodemon --exec babel-node src/loader.js",
     "build": "babel src --out-dir dist",
-    "production": "pm2 start dist/loader.js --name my-money-backend"
+    "production": "pm2 start dist/loader.js --name my-money-backend",
+    "exec-production": "npm run clean && npm run build && npm run production"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
     "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-async-to-generator": "^7.5.0",
     "@babel/preset-env": "^7.4.1",
     "nodemon": "^1.11.0"
   },
