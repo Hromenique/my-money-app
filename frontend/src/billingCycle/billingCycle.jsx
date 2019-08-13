@@ -9,6 +9,7 @@ import TabsHeader from '../commons/tab/tabsHeader'
 import TabsContent from '../commons/tab/tabsContent'
 import TabHeader from '../commons/tab/tabHeader'
 import TabContent from '../commons/tab/tabContent'
+import List from './billingCycleList'
 
 class BillingCycle extends Component {
 
@@ -30,7 +31,9 @@ class BillingCycle extends Component {
                             <TabHeader label='Excluir' icon='trash-o' target='tabDelete' />
                         </TabsHeader>
                         <TabsContent>
-                            <TabContent id='tabList'><h1>Lista</h1></TabContent>
+                            <TabContent id='tabList'>
+                                <List></List>
+                            </TabContent>
                             <TabContent id='tabCreate'><h1>Incluir</h1></TabContent>
                             <TabContent id='tabUpdate'><h1>Update</h1></TabContent>
                             <TabContent id='tabDelete'><h1>Excluir</h1></TabContent>
