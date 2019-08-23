@@ -1,5 +1,3 @@
-import tabs from "./tabs";
-
 export function selectTab(tabId) {
     return {
         type: 'TAB_SELECTED',
