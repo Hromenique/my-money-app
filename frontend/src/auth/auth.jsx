@@ -5,11 +5,9 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { login, signup } from './authActions'
 
-import { login, signup } from './authActions'
-import Row from '../common/layout/row'
-import Grid from '../common/layout/grid'
-import If from '../common/operator/if'
-import Messages from '../common/msg/messages'
+import Row from '../commons/layout/row'
+import Grid from '../commons/layout/grid'
+import Messages from '../commons/msg/messages'
 import Input from '../commons/form/inputAuth'
 
 class Auth extends Component {
